@@ -12,8 +12,8 @@ public class DemoQA {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  WebDriverManager.edgedriver();
-	        WebDriver driver = new EdgeDriver();
+		  WebDriverManager.chromeDriver().setup();
+	        WebDriver driver = new chromeDriver();
 	        driver.get("https://www.google.com");
 	        driver.manage().window().maximize();
 
